@@ -19,6 +19,10 @@ Route::get('/', function () {
     return view('welcome');
 }) -> middleware(['auth']);
 
+Route::get('/dashboard', function () {
+    return view('dashboard');
+})->name('dashboard');
+
 
 Route::get('/movies', [MovieController::class, 'index']) -> middleware(['auth']) -> name('movies.index');
 Route::post('/movies', [MovieController::class, 'store']) -> middleware(['auth']) -> name('movies.store');
