@@ -1,0 +1,25 @@
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
+
+body {
+    background-color: black;
+    /* color: white; */
+} 
+
+main {
+    background-color: black;
+    color: white;
+}
+
+x-app-layout {
+}
+x-slot {
+    background-color: black;
+    border-color : white;
+}
+
+header {
+    background-color: black;
+    color: white;
+}
